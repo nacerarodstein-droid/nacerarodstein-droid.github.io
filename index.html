@@ -77,8 +77,9 @@ header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px s
 .section{padding-top:104px;padding-bottom:104px}
 .intro{display:flex;flex-direction:column;gap:12px;max-width:760px}
 .stack{display:flex;flex-direction:column;gap:48px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.card{background:var(--soft);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:14px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 48px}
+.card{display:flex;flex-direction:column;gap:10px}
+#expertise .card{border-top:1px solid var(--line);padding-top:28px}
 .card h3{font-weight:700;font-size:21px}
 .card p{color:var(--muted);font-size:16px}
 .ico{width:32px;height:32px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -101,7 +102,7 @@ header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px s
 .split{display:flex;flex-wrap:wrap;gap:56px}
 .split-left{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px}
 .split-right{flex:999 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.bg-sky .card{background:var(--surface);padding:28px;gap:12px}
+.bg-sky .card{background:var(--surface);border-radius:20px;padding:28px;gap:12px}
 .bg-sky .card h3{font-size:20px}
 .bg-sky .ico{stroke:var(--accent2);width:30px;height:30px}
 .badge{align-self:flex-start;display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;padding:14px 18px}
@@ -176,7 +177,6 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-fa
 <section id="hello" class="hero wrap">
 <div class="hero-text">
 <p class="open"><span class="dot" aria-hidden="true"></span>Open to People Partner, HRBP &amp; Talent roles</p>
-<p class="eyebrow">People Partner · HR Leader</p>
 <h1>Bonjour, I'm Nacera. I help leaders build teams that do their best work.</h1>
 <p class="lead">12+ years in HR, most recently 8 years as Head of People &amp; Talent at o1Labs. I partner with founders and managers on hiring, performance, employee relations and pay, and I build the systems that keep it all running.</p>
 <div class="tags" aria-label="Core areas">
@@ -193,7 +193,6 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-fa
 
 <section id="expertise" class="section wrap stack">
 <div class="intro">
-<p class="eyebrow">Expertise</p>
 <h2 class="h2">What I bring to a people team</h2>
 <p class="lead">I've run a people function hands-on, from the first policy to the full review cycle. My background in finance and business intelligence means I understand the business side, and my advice is backed by data.</p>
 </div>
@@ -234,7 +233,6 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-fa
 <section id="experience" class="bg-soft">
 <div class="section wrap xp">
 <div class="intro">
-<p class="eyebrow">Experience</p>
 <h2 class="h2">Where I've done the work</h2>
 <p class="lead">From sports media to blockchain, through hiring sprints, acquisitions and reorganizations.</p>
 </div>
@@ -251,7 +249,6 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-fa
 <section id="managers" class="bg-sky">
 <div class="section wrap split">
 <div class="split-left">
-<p class="eyebrow">How I work</p>
 <h2 class="h2">HR that starts with the manager</h2>
 <p class="lead">Most people problems are solved, or created, by managers. For eight years I've been their first call for hard conversations, performance issues and reorgs. I listen first, ask the questions that matter, and make sure the right call gets made, with care.</p>
 <div class="badge">
