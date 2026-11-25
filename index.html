@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nacera Rodstein — HR Leader &amp; Coach</title>
-<meta name="description" content="Nacera Rodstein is an HR leader and coach in the San Francisco Bay Area with 12+ years in high-growth tech.">
-<meta property="og:title" content="Nacera Rodstein — HR Leader &amp; Coach">
-<meta property="og:description" content="HR leader and coach in the San Francisco Bay Area with 12+ years in high-growth tech.">
+<title>Nacera Rodstein — People Partner &amp; HR Leader</title>
+<meta name="description" content="Nacera Rodstein is an HR leader and People Partner in the San Francisco Bay Area with 12+ years in high-growth tech, including 8 years as Head of People & Talent at o1Labs.">
+<meta property="og:title" content="Nacera Rodstein — People Partner &amp; HR Leader">
+<meta property="og:description" content="HR leader and People Partner with 12+ years in high-growth tech: employee relations, performance, org design, total rewards and HR systems.">
 <meta property="og:image" content="https://nacerarodstein.com/nacera-rodstein.jpg">
+<meta property="og:url" content="https://nacerarodstein.com/">
+<meta property="og:type" content="profile">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -16,262 +18,380 @@
 <link rel="canonical" href="https://nacerarodstein.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Nacera Rodstein","jobTitle":"People Partner & HR Leader","url":"https://nacerarodstein.com/","image":"https://nacerarodstein.com/nacera-rodstein.jpg","sameAs":["https://linkedin.com/in/nacerarodstein"],"address":{"@type":"PostalAddress","addressRegion":"CA","addressLocality":"San Francisco Bay Area"},"knowsLanguage":["English","French"]}
+</script>
 <style>
-body{margin:0}
-a{color:#1C2541}a:hover{color:#B4532A}
-</style>
-<style>
-html{scroll-behavior:smooth}section[id]{scroll-margin-top:80px}
-.btn{transition:transform .15s ease, box-shadow .15s ease}
+:root{--navy:#1C2541;--rust:#B4532A;--blue:#2563EB;--muted:#4B5468;--soft:#F6F7FB;--sky:#EEF3FE;--line:#D9DEE8;--head:'Plus Jakarta Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--navy);background:#fff;line-height:1.6;font-size:17px}
+a{color:var(--navy)}a:hover{color:var(--rust)}
+h1,h2,h3{font-family:var(--head);margin:0}
+p{margin:0}
+section[id]{scroll-margin-top:80px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:32px;padding-right:32px}
+.eyebrow{font-family:var(--head);font-weight:800;font-size:15px;letter-spacing:.16em;color:var(--blue);text-transform:uppercase}
+.h2{font-weight:800;font-size:44px;letter-spacing:-.02em;line-height:1.15}
+.lead{font-size:19px;color:var(--muted)}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
 .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(28,37,65,.18)}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2563EB;outline-offset:2px}
-input:focus,textarea:focus{border-color:#2563EB!important;outline:none}
-#cf-status{margin:0;font-size:15px}
+.btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{color:#fff}
+.btn-rust{background:var(--rust);color:#fff}.btn-rust:hover{color:#fff}
+.btn-line{border:1.5px solid var(--navy)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #E6E9F0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px}
+.brand{font-family:var(--head);font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.01em}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px;font-weight:500}
+.links a{text-decoration:none}
+.links .btn{min-height:44px;padding:12px 20px;font-size:15px}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-top:96px;padding-bottom:88px}
+.hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero h1{font-weight:800;font-size:clamp(40px,5vw,60px);line-height:1.08;letter-spacing:-.02em}
+.hero .lead{font-size:20px;max-width:620px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:14px;font-weight:500;background:var(--soft);border:1px solid #E6E9F0;border-radius:999px;padding:6px 14px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;padding-top:4px}
+.hero-photo{flex:1 1 320px;min-width:0;max-width:420px;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:28px;display:block}
+
+/* stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding-top:48px;padding-bottom:48px}
+.stat b{display:block;font-family:var(--head);font-weight:800;font-size:44px;line-height:1.1}
+.stat span{color:#D4D9E6}
+
+/* sections */
+.section{padding-top:104px;padding-bottom:104px}
+.intro{display:flex;flex-direction:column;gap:12px;max-width:760px}
+.stack{display:flex;flex-direction:column;gap:48px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{background:var(--soft);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:14px}
+.card h3{font-weight:700;font-size:21px}
+.card p{color:var(--muted);font-size:16px}
+.ico{width:32px;height:32px;fill:none;stroke:var(--rust);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* experience */
+.bg-soft{background:var(--soft)}
+.job{background:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:20px}
+.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
+.job h3{font-weight:800;font-size:28px}
+.role{font-weight:600;color:var(--rust)}
+.when{color:var(--muted);font-size:15px;font-weight:500}
+.wins{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 40px}
+.wins li{position:relative;padding-left:22px;font-size:16px}
+.wins li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--rust)}
+.earlier-title{font-family:var(--head);font-weight:700;font-size:20px}
+.earlier{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.mini{background:#fff;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px}
+.mini h3{font-weight:700;font-size:20px}
+.mini .role{font-size:15px}
+.mini .d{color:var(--muted);font-size:14px;font-weight:500}
+.mini p:last-child{color:var(--muted);font-size:15px}
+
+/* managers / coaching */
+.bg-sky{background:var(--sky)}
+.split{display:flex;flex-wrap:wrap;gap:56px}
+.split-left{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.split-right{flex:999 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.bg-sky .card{background:#fff;padding:28px;gap:12px}
+.bg-sky .card h3{font-size:20px}
+.bg-sky .ico{stroke:var(--blue);width:30px;height:30px}
+.badge{align-self:flex-start;display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:14px 18px}
+.badge p{font-size:15px;line-height:1.45}
+
+/* education */
+.edu{display:flex;flex-wrap:wrap;gap:48px}
+.edu-left{flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.edu-list{flex:999 1 520px;min-width:0}
+.edu-item{padding:24px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.edu-item:last-child{border-bottom:1px solid var(--line)}
+.edu-item h3{font-weight:700;font-size:20px}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .split{padding-top:104px;padding-bottom:104px}
+.contact .lead{color:#D4D9E6}
+.contact-links{display:flex;flex-direction:column;gap:10px;padding-top:8px}
+.contact-links a{color:#fff;font-weight:600}
+form{flex:999 1 460px;min-width:0;background:#fff;color:var(--navy);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;flex-wrap:wrap;gap:18px}
+.field{flex:1 1 200px;display:flex;flex-direction:column;gap:6px}
+label{font-size:14px;font-weight:600}
+input,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #B8BFCE;border-radius:12px;min-height:48px}
+textarea{resize:vertical}
+input:focus,textarea:focus{border-color:var(--blue);outline:none}
+button{font:inherit;font-weight:600;background:var(--rust);color:#fff;border:none;border-radius:999px;padding:14px 28px;min-height:48px;cursor:pointer}
+button:disabled{opacity:.7;cursor:default}
+.send{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+#cf-status{font-size:15px}
+#cf-status:empty{display:none}
+footer{border-top:1px solid #34406A}
+footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
+
+@media (max-width:960px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .earlier{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media (max-width:720px){
-  .nav{padding:12px 20px!important;flex-wrap:nowrap!important}
-  .nav-link{display:none!important}
-  .hero{padding:48px 20px 64px!important;gap:32px!important}
-  .hero-photo{max-width:280px!important}
-  .coach-grid{grid-template-columns:1fr!important}
-  section > div, section[id]{padding-left:20px!important;padding-right:20px!important}
+  .wrap{padding-left:20px;padding-right:20px}
+  .nav{padding-top:12px;padding-bottom:12px}
+  .links a:not(.btn){display:none}
+  .hero{padding-top:48px;padding-bottom:64px;gap:32px}
+  .hero-photo{max-width:280px}
+  .section,.contact .split{padding-top:72px;padding-bottom:72px}
+  .h2{font-size:36px}
+  .cards,.earlier,.split-right,.wins{grid-template-columns:1fr}
+  .job{padding:28px}
+  form{padding:24px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
-<div style="font-family: Inter, system-ui, sans-serif; color: #1C2541; background: #FFFFFF; line-height: 1.6; font-size: 17px">
 
-<header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 1px solid #E6E9F0">
-<nav aria-label="Main" class="nav" style="max-width: 1120px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#hello" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 20px; text-decoration: none; color: #1C2541; letter-spacing: -0.01em">Nacera Rodstein</a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
-<a href="#what-i-do" class="nav-link" style="text-decoration: none">What I Do</a>
-<a href="#coaching" class="nav-link" style="text-decoration: none">Coaching</a>
-<a href="#experience" class="nav-link" style="text-decoration: none">Experience</a>
-<a href="#education" class="nav-link" style="text-decoration: none">Education</a>
-<a href="#reach-out" class="btn" style="text-decoration: none; background: #B4532A; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Connect</a>
+<header>
+<nav aria-label="Main" class="nav wrap">
+<a href="#hello" class="brand">Nacera Rodstein</a>
+<div class="links">
+<a href="#expertise">Expertise</a>
+<a href="#experience">Experience</a>
+<a href="#managers">How I Work</a>
+<a href="#education">Education</a>
+<a href="#reach-out" class="btn btn-rust">Get in Touch</a>
 </div>
 </nav>
 </header>
 
-<section id="hello" class="hero" style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.18em; color: #2563EB">BONJOUR!</p>
-<h1 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 1.08; letter-spacing: -0.02em">I'm Nacera, an HR leader and coach who helps people and teams do their best work.</h1>
-<p style="margin: 0; font-size: 20px; color: #4B5468; max-width: 600px">12+ years leading HR in high-growth tech, and a Co-Active coach in training. Based in the San Francisco Bay Area, I'm the partner employees, managers and founders trust with what matters most.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
-<a href="#reach-out" class="btn" style="text-decoration: none; background: #1C2541; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Collaborate</a>
-<a href="#coaching" class="btn" style="text-decoration: none; border: 1.5px solid #1C2541; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">How I coach</a>
+<main>
+<section id="hello" class="hero wrap">
+<div class="hero-text">
+<p class="eyebrow">People Partner · HR Leader</p>
+<h1>Bonjour, I'm Nacera. I help leaders build teams that do their best work.</h1>
+<p class="lead">I'm an HR leader with 12+ years in high-growth tech, including 8 years as Head of People &amp; Talent at o1Labs. I partner with founders and managers on what makes or breaks a team: employee relations, performance, org design, pay, and the systems behind them.</p>
+<div class="tags" aria-label="Core areas">
+<span>HR business partnering</span><span>Employee relations</span><span>Performance &amp; calibration</span><span>Leveling &amp; comp</span><span>HRIS</span><span>Manager coaching</span>
+</div>
+<div class="ctas">
+<a href="#reach-out" class="btn btn-dark">Get in touch</a>
+<a href="#experience" class="btn btn-line">See my experience</a>
 </div>
 </div>
-<img src="nacera-rodstein.jpg" class="hero-photo" width="420" height="525" alt="Portrait of Nacera Rodstein, smiling" style="flex: 1 1 320px; min-width: 0; max-width: 420px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 28px; display: block">
+<img src="nacera-rodstein.jpg" class="hero-photo" width="420" height="525" alt="Portrait of Nacera Rodstein, smiling">
 </section>
 
-<section aria-label="At a glance" style="background: #1C2541; color: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 48px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">12+</p>
-<p style="margin: 0; color: #D4D9E6">years leading HR in high-growth tech</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">8 years</p>
-<p style="margin: 0; color: #D4D9E6">leading People &amp; Talent at o1Labs</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">65</p>
-<p style="margin: 0; color: #D4D9E6">people on a worldwide team, supported hands-on</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">5</p>
-<p style="margin: 0; color: #D4D9E6">companies, from sports media to blockchain</p>
-</div>
+<section aria-label="At a glance" class="stats">
+<div class="wrap">
+<div class="stat"><b>12+</b><span>years leading HR in high-growth tech</span></div>
+<div class="stat"><b>8 years</b><span>as Head of People &amp; Talent at o1Labs</span></div>
+<div class="stat"><b>65</b><span>people on a worldwide team, supported end to end</span></div>
+<div class="stat"><b>5</b><span>companies, from sports media to blockchain</span></div>
 </div>
 </section>
 
-<section id="what-i-do" style="max-width: 1120px; margin: 0 auto; padding: 104px 32px 96px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
-<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">What I Do</h2>
-<p style="margin: 0; font-size: 19px; color: #4B5468">I bring two strengths to every team: deep, hands-on HR expertise and a coach's way of listening. I'm the go-to partner for employees, managers and leadership, and my background in finance and business intelligence means people decisions are backed by data.</p>
+<section id="expertise" class="section wrap stack">
+<div class="intro">
+<p class="eyebrow">Expertise</p>
+<h2 class="h2">What I bring to a people team</h2>
+<p class="lead">I've run the people function hands-on, from the first policy to the full review cycle, so I bring both the strategy and the execution. Leaders get a partner who understands the business, and my background in finance and business intelligence means my advice is backed by data.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
-<div style="background: #F6F7FB; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 14px">
-<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B4532A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"></path><path d="M16 5.5a3 3 0 0 1 0 5.6"></path><path d="M18 14.3c1.4.7 2.3 2.4 2.6 4.7"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 21px">Employee Relations</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Investigations and case management, manager advising, and policies and handbooks that keep up with employment law.</p>
+<div class="cards">
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="5" rx="1"/><rect x="13.5" y="15.5" width="7" height="5" rx="1"/><rect x="3.5" y="15.5" width="7" height="5" rx="1"/><path d="M7 8.5v7M7 12h10v3.5"/></svg>
+<h3>Business partnering &amp; org design</h3>
+<p>The first call for founders and managers on team structure, reorgs, workforce planning and the people side of big decisions.</p>
 </div>
-<div style="background: #F6F7FB; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 14px">
-<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B4532A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-7"></path><path d="M3 20h18"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 21px">Talent &amp; Development</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Performance reviews and calibration, goal-setting and feedback cycles, career ladders, and coaching managers to lead well.</p>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"/><path d="M16 5.5a3 3 0 0 1 0 5.6"/><path d="M18 14.3c1.4.7 2.3 2.4 2.6 4.7"/></svg>
+<h3>Employee relations</h3>
+<p>Sensitive cases handled end to end: objective, confidential investigations, clear documentation and fair outcomes. Policies and handbooks that keep up with employment law.</p>
 </div>
-<div style="background: #F6F7FB; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 14px">
-<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B4532A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M14.8 9.2c-.5-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2s1.1 1.7 2.8 2.1 2.8.9 2.8 2.1-1.2 2-2.8 2c-1.3 0-2.4-.6-2.9-1.5"></path><path d="M12 6v1.8"></path><path d="M12 16.2V18"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 21px">Total Rewards &amp; Analytics</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Leveling and pay bands, benefits, and people data on engagement and retention that leadership can act on.</p>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M3 20h18"/></svg>
+<h3>Performance &amp; talent</h3>
+<p>Semiannual review and calibration cycles, goal-setting and feedback, promotions, and career ladders that make the next step clear.</p>
 </div>
-<div style="background: #F6F7FB; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 14px">
-<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B4532A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17"></path><path d="M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 21px">HR Infrastructure</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">HRIS rollouts (Rippling, Gusto, Lattice, Greenhouse), SOPs, immigration, and multi-country compliance with PEO/EOR partners.</p>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.8 9.2c-.5-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2s1.1 1.7 2.8 2.1 2.8.9 2.8 2.1-1.2 2-2.8 2c-1.3 0-2.4-.6-2.9-1.5"/><path d="M12 6v1.8"/><path d="M12 16.2V18"/></svg>
+<h3>Total rewards &amp; people data</h3>
+<p>Leveling frameworks, salary bands and benefits, plus attrition and engagement data that leadership can act on.</p>
 </div>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg>
+<h3>HR operations &amp; systems</h3>
+<p>HRIS rollouts (Rippling, Gusto, Lattice, Greenhouse), SOPs, immigration, and multi-country compliance with PEO/EOR partners.</p>
 </div>
-</section>
-
-<section id="coaching" style="background: #EEF3FE">
-<div style="max-width: 1120px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.16em; color: #2563EB">HR EXPERTISE + COACHING</p>
-<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">Coaching is at the heart of how I do HR</h2>
-<p style="margin: 0; font-size: 19px; color: #4B5468">For eight years I've coached managers and leaders through hard conversations, performance challenges, reorganizations and their own growth. I listen first, ask the questions that matter, and help people find their own way forward.</p>
-<div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px">
-<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"></path></svg>
-<p style="margin: 0; font-size: 15px; line-height: 1.45"><strong>Certified Professional Co-Active Coach (CPCC)</strong><br>Co-Active Training Institute · completing March 2027</p>
-</div>
-<a href="#reach-out" class="btn" style="align-self: flex-start; text-decoration: none; background: #2563EB; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Talk about coaching</a>
-</div>
-<div style="flex: 999 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px" class="coach-grid">
-<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10H9l-5 4z"></path><path d="M8 9.5h8"></path><path d="M8 12.5h5"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Manager coaching</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Helping new and experienced managers give clear feedback, handle tough conversations and lead with confidence.</p>
-</div>
-<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 10 13l4 4 6-8"></path><path d="M15 9h5v5"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Leadership development</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Growing leaders through goal-setting, honest feedback cycles and career ladders that make the next step clear.</p>
-</div>
-<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><path d="m15.5 8.5-2 5-5 2 2-5z"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Navigating change</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Guiding people and teams through reorganizations, rapid growth and acquisitions with care and clarity.</p>
-</div>
-<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"></path><path d="M6 4h11l-2 4 2 4H6"></path></svg>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Career growth</h3>
-<p style="margin: 0; color: #4B5468; font-size: 16px">Helping people get clear on where they want to go next, and on the steps that will get them there.</p>
-</div>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M8 9.5h8"/><path d="M8 12.5h5"/></svg>
+<h3>Manager coaching</h3>
+<p>Helping first-time and experienced managers give clear feedback, handle hard conversations and lead with confidence.</p>
 </div>
 </div>
 </section>
 
-<section id="experience" style="background: #F6F7FB">
-<div style="max-width: 1120px; margin: 0 auto; padding: 104px 32px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
-<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">Experience</h2>
-<p style="margin: 0; font-size: 19px; color: #4B5468">From media to cybersecurity to blockchain, I've helped teams grow through hiring sprints, acquisitions and reorganizations.</p>
+<section id="experience" class="bg-soft">
+<div class="section wrap stack">
+<div class="intro">
+<p class="eyebrow">Experience</p>
+<h2 class="h2">Where I've done the work</h2>
+<p class="lead">From sports media to cybersecurity to blockchain, I've helped teams grow through hiring sprints, acquisitions and reorganizations.</p>
 </div>
 
-<article style="background: #FFFFFF; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 28px">o1Labs</h3>
-<p style="margin: 0; font-weight: 600; color: #B4532A">Head of People &amp; Talent</p>
+<article class="job">
+<div class="job-head">
+<div>
+<h3>o1Labs</h3>
+<p class="role">Head of People &amp; Talent</p>
 </div>
-<p style="margin: 0; color: #4B5468; font-size: 15px; font-weight: 500">2018 – Present · San Francisco</p>
+<p class="when">2018 – Present · San Francisco</p>
 </div>
-<p style="margin: 0; color: #4B5468">Running HR hands-on for a 65-person, worldwide blockchain technology company.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px 40px">
-<p style="margin: 0; font-size: 16px">Handle sensitive employee relations matters and coach managers through performance issues, team changes and reorgs.</p>
-<p style="margin: 0; font-size: 16px">Designed and run semiannual performance and calibration cycles, from goal-setting to feedback.</p>
-<p style="margin: 0; font-size: 16px">Built the leveling framework, career ladders and salary bands, and run the promotion process.</p>
-<p style="margin: 0; font-size: 16px">Track attrition and engagement data so leadership can make people decisions with confidence.</p>
-</div>
+<p class="muted">Leading HR hands-on for a 65-person, worldwide blockchain technology company, as the partner to leadership, managers and employees.</p>
+<ul class="wins">
+<li>Partner with leadership on team structure, reorgs and the people side of company decisions.</li>
+<li>Handle sensitive employee relations matters end to end, from investigation to resolution.</li>
+<li>Designed and run semiannual performance and calibration cycles, from goal-setting to feedback.</li>
+<li>Built the leveling framework, career ladders and salary bands, and run the promotion process.</li>
+<li>Coach managers through performance issues, hard conversations, team changes and reorgs.</li>
+<li>Track attrition and engagement data so leadership can make people decisions with confidence.</li>
+</ul>
 </article>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
-<article style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
-<p style="margin: 0; color: #4B5468; font-size: 14px; font-weight: 500">2017 – 2018</p>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Maha Investments</h3>
-<p style="margin: 0; font-weight: 600; font-size: 15px; color: #B4532A">Operations Manager &amp; Finance</p>
-<p style="margin: 0; color: #4B5468; font-size: 15px">Ran operations, finance processes and compliance controls at an investment firm.</p>
+<p class="earlier-title">Earlier: operations, finance and business intelligence, the foundation for a business-first approach to HR</p>
+<div class="earlier">
+<article class="mini">
+<p class="d">2017 – 2018</p>
+<h3>Maha Investments</h3>
+<p class="role">Operations Manager &amp; Finance</p>
+<p>Ran operations, finance processes and compliance controls at an investment firm.</p>
 </article>
-<article style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
-<p style="margin: 0; color: #4B5468; font-size: 14px; font-weight: 500">2015 – 2016</p>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Oracle</h3>
-<p style="margin: 0; font-weight: 600; font-size: 15px; color: #B4532A">Business Intelligence Specialist</p>
-<p style="margin: 0; color: #4B5468; font-size: 15px">Delivered business intelligence across complex enterprise sales cycles.</p>
+<article class="mini">
+<p class="d">2015 – 2016</p>
+<h3>Oracle</h3>
+<p class="role">Business Intelligence Specialist</p>
+<p>Delivered business intelligence across complex enterprise sales cycles.</p>
 </article>
-<article style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
-<p style="margin: 0; color: #4B5468; font-size: 14px; font-weight: 500">2012 – 2015</p>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Mokum Solutions</h3>
-<p style="margin: 0; font-weight: 600; font-size: 15px; color: #B4532A">Director of Business Operations</p>
-<p style="margin: 0; color: #4B5468; font-size: 15px">Led People Operations through rapid growth at a cybersecurity and IT consultancy.</p>
+<article class="mini">
+<p class="d">2012 – 2015</p>
+<h3>Mokum Solutions</h3>
+<p class="role">Director of Business Operations</p>
+<p>Led People Operations through rapid growth at a cybersecurity and IT consultancy.</p>
 </article>
-<article style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
-<p style="margin: 0; color: #4B5468; font-size: 14px; font-weight: 500">2011 – 2012</p>
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Bleacher Report</h3>
-<p style="margin: 0; font-weight: 600; font-size: 15px; color: #B4532A">Senior Operations &amp; Finance</p>
-<p style="margin: 0; color: #4B5468; font-size: 15px">Supported People Ops, recruiting and finance through the Time Warner acquisition.</p>
+<article class="mini">
+<p class="d">2011 – 2012</p>
+<h3>Bleacher Report</h3>
+<p class="role">Senior Operations &amp; Finance</p>
+<p>Supported People Ops, recruiting and finance through the Time Warner acquisition.</p>
 </article>
 </div>
 </div>
 </section>
 
-<section id="education" style="max-width: 1120px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">Education &amp; More</h2>
-<p style="margin: 0; font-size: 19px; color: #4B5468">A business education from France, coach training underway, and a seat on the board.</p>
+<section id="managers" class="bg-sky">
+<div class="section wrap split">
+<div class="split-left">
+<p class="eyebrow">How I work</p>
+<h2 class="h2">HR that starts with the manager</h2>
+<p class="lead">Most people problems are solved, or created, by managers. For eight years I've been their first call for hard conversations, performance issues and reorgs. I listen first, ask the questions that matter, and make sure the right call gets made, with care.</p>
+<div class="badge">
+<svg class="ico" style="stroke:var(--blue);width:28px;height:28px;flex:none" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></svg>
+<p><strong>Certified Professional Co-Active Coach (CPCC)</strong><br>Co-Active Training Institute · completing March 2027</p>
 </div>
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column">
-<div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">IAE Lille, France</h3>
-<p style="margin: 0; color: #4B5468">Master's in Marketing &amp; Communication, with honors · Bachelor's in Business Administration</p>
 </div>
-<div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Certified Professional Co-Active Coach (CPCC)</h3>
-<p style="margin: 0; color: #4B5468">Co-Active Training Institute · expected March 2027</p>
+<div class="split-right">
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M8 9.5h8"/><path d="M8 12.5h5"/></svg>
+<h3>Hard conversations</h3>
+<p>Preparing managers for feedback, performance and exit conversations so they're clear, fair and humane.</p>
 </div>
-<div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Board Member, o1Labs</h3>
-<p style="margin: 0; color: #4B5468">2022, 2024 and 2025</p>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19 10 13l4 4 6-8"/><path d="M15 9h5v5"/></svg>
+<h3>Growing leaders</h3>
+<p>Developing new and experienced managers through goal-setting, honest feedback and clear career paths.</p>
 </div>
-<div style="padding: 24px 0; border-top: 1px solid #D9DEE8; border-bottom: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Languages</h3>
-<p style="margin: 0; color: #4B5468">English and French (fluent)</p>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+<h3>Navigating change</h3>
+<p>Guiding people and teams through reorganizations, rapid growth and acquisitions with care and clarity.</p>
+</div>
+<div class="card">
+<svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 4h11l-2 4 2 4H6"/></svg>
+<h3>Spotting patterns early</h3>
+<p>Reading team dynamics and people data to flag risks before they become crises.</p>
+</div>
 </div>
 </div>
 </section>
 
-<section id="reach-out" style="background: #1C2541; color: #FFFFFF">
-<div style="max-width: 1120px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">Reach Out</h2>
-<p style="margin: 0; font-size: 19px; color: #D4D9E6">Building your people function, looking for an experienced HR partner, or want coaching support for your managers and leaders? I'd love to hear what you're working on.</p>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 8px">
-<a href="mailto:nacera.rodstein@gmail.com" style="color: #FFFFFF; font-weight: 600">nacera.rodstein@gmail.com</a>
-<a href="https://linkedin.com/in/nacerarodstein" style="color: #FFFFFF; font-weight: 600">linkedin.com/in/nacerarodstein</a>
-<p style="margin: 0; color: #D4D9E6">San Francisco Bay Area</p>
+<section id="education" class="section wrap edu">
+<div class="edu-left">
+<h2 class="h2">Education &amp; More</h2>
+<p class="lead">A business education from France, coach training underway, and a seat on the board.</p>
+</div>
+<div class="edu-list">
+<div class="edu-item">
+<h3>IAE Lille, France</h3>
+<p class="muted">Master's in Marketing &amp; Communication, with honors · Bachelor's in Business Administration</p>
+</div>
+<div class="edu-item">
+<h3>Certified Professional Co-Active Coach (CPCC)</h3>
+<p class="muted">Co-Active Training Institute · expected March 2027</p>
+</div>
+<div class="edu-item">
+<h3>Board Member, o1Labs</h3>
+<p class="muted">2022, 2024 and 2025</p>
+</div>
+<div class="edu-item">
+<h3>Languages</h3>
+<p class="muted">English and French (fluent)</p>
 </div>
 </div>
-<form id="contact" aria-label="Contact form" action="https://formsubmit.co/nacera.rodstein@gmail.com" method="POST" style="flex: 999 1 460px; min-width: 0; background: #FFFFFF; color: #1C2541; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; flex-wrap: wrap; gap: 18px">
-<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
-<label for="cf-name" style="font-size: 14px; font-weight: 600">Name</label>
-<input id="cf-name" name="name" type="text" required autocomplete="name" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BFCE; border-radius: 12px; min-height: 48px; box-sizing: border-box">
+</section>
+</main>
+
+<section id="reach-out" class="contact">
+<div class="wrap split">
+<div class="split-left">
+<h2 class="h2">Let's talk</h2>
+<p class="lead">Building or scaling a people team? I'd love to hear what you're working on and how I can help.</p>
+<div class="contact-links">
+<a href="mailto:nacera.rodstein@gmail.com">nacera.rodstein@gmail.com</a>
+<a href="https://linkedin.com/in/nacerarodstein">linkedin.com/in/nacerarodstein</a>
+<p style="color:#D4D9E6">San Francisco Bay Area</p>
 </div>
-<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
-<label for="cf-email" style="font-size: 14px; font-weight: 600">Email</label>
-<input id="cf-email" name="email" type="email" required autocomplete="email" style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BFCE; border-radius: 12px; min-height: 48px; box-sizing: border-box">
+</div>
+<form id="contact" aria-label="Contact form" action="https://formsubmit.co/nacera.rodstein@gmail.com" method="POST">
+<div class="row">
+<div class="field">
+<label for="cf-name">Name</label>
+<input id="cf-name" name="name" type="text" required autocomplete="name">
+</div>
+<div class="field">
+<label for="cf-email">Email</label>
+<input id="cf-email" name="email" type="email" required autocomplete="email">
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="cf-message" style="font-size: 14px; font-weight: 600">Message</label>
-<textarea id="cf-message" name="message" rows="5" required style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BFCE; border-radius: 12px; resize: vertical"></textarea>
+<div class="field">
+<label for="cf-message">Message</label>
+<textarea id="cf-message" name="message" rows="5" required></textarea>
 </div>
 <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px">
-<button type="submit" class="btn" style=" font: inherit; font-weight: 600; background: #B4532A; color: #FFFFFF; border: none; border-radius: 999px; padding: 14px 28px; min-height: 48px; cursor: pointer">Send message</button>
-<p style="margin: 0; font-size: 14px; color: #4B5468">I read every message myself.</p>
+<div class="send">
+<button type="submit" class="btn">Send message</button>
+<p class="muted" style="font-size:14px">I read every message myself.</p>
 </div>
 <p id="cf-status" role="status" aria-live="polite"></p>
 </form>
 </div>
-<div style="border-top: 1px solid #34406A">
-<p style="max-width: 1120px; margin: 0 auto; padding: 24px 32px; font-size: 14px; color: #B9C0D3">© 2026 Nacera Rodstein · nacerarodstein.com</p>
-</div>
+<footer>
+<p class="wrap">© 2026 Nacera Rodstein · nacerarodstein.com</p>
+</footer>
 </section>
 
-</div>
 <script>
 (function(){
   var f=document.getElementById('contact'), st=document.getElementById('cf-status'), btn=f.querySelector('button[type=submit]');
