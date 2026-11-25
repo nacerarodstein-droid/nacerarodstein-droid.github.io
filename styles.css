@@ -77,19 +77,19 @@ header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px s
 .split{display:flex;flex-wrap:wrap;gap:56px}
 .split-left{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px}
 .split-right{flex:999 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.bg-sky .card{background:var(--surface);border-radius:20px;padding:28px;gap:12px}
+.bg-sky .card{border-top:1px solid rgba(125,46,61,.2);padding-top:24px;gap:10px}
+.split-right{column-gap:40px!important;row-gap:36px!important}
 .bg-sky .card h3{font-size:20px}
 .bg-sky .ico{stroke:var(--accent2);width:30px;height:30px}
 .badge{align-self:flex-start;display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;padding:14px 18px}
 .badge p{font-size:15px;line-height:1.45}
 
 /* education */
-.edu{display:flex;flex-wrap:wrap;gap:48px}
-.edu-left{flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:12px}
-.edu-list{flex:999 1 520px;min-width:0}
-.edu-item{padding:24px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
-.edu-item:last-child{border-bottom:1px solid var(--line)}
-.edu-item h3{font-weight:700;font-size:20px}
+.edu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:24px 56px;align-items:start;padding-top:88px;padding-bottom:88px}
+.edu-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 40px}
+.edu-item{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:6px}
+.edu-item h3{font-weight:600;font-size:19px}
+.edu-item p{font-size:16px}
 
 /* contact */
 .contact{background:var(--dark);color:var(--on-dark)}
@@ -123,7 +123,8 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-fa
   .hero-photo{max-width:280px}
   .section,.contact .split{padding-top:72px;padding-bottom:72px}
   .h2{font-size:28px}
-  .cards,.split-right{grid-template-columns:1fr}
+  .cards,.split-right,.edu-list{grid-template-columns:1fr}
+  .edu{grid-template-columns:1fr;padding-top:72px;padding-bottom:72px}
   .xp-list{padding:4px 20px}
   .xp-list{display:block}
   .xp-list li{grid-template-columns:1fr auto;column-gap:16px}
