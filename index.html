@@ -78,21 +78,15 @@ header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid 
 
 /* experience */
 .bg-soft{background:var(--soft)}
-.job{background:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:20px}
-.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
-.job h3{font-weight:800;font-size:28px}
-.role{font-weight:600;color:var(--rust)}
-.when{color:var(--muted);font-size:15px;font-weight:500}
-.wins{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 40px}
-.wins li{position:relative;padding-left:22px;font-size:16px}
-.wins li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--rust)}
-.earlier-title{font-family:var(--head);font-weight:700;font-size:20px}
-.earlier{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
-.mini{background:#fff;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px}
-.mini h3{font-weight:700;font-size:20px}
-.mini .role{font-size:15px}
-.mini .d{color:var(--muted);font-size:14px;font-weight:500}
-.mini p:last-child{color:var(--muted);font-size:15px}
+.xp{display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-start}
+.xp .intro{flex:1 1 300px}
+.xp-list{flex:999 1 560px;list-style:none;margin:0;padding:0;background:#fff;border-radius:24px;padding:8px 32px}
+.xp-list li{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) 130px;gap:4px 24px;align-items:baseline;padding:20px 0;border-top:1px solid #E6E9F0}
+.xp-list li:first-child{border-top:none}
+.co{font-family:var(--head);font-weight:700;font-size:19px}
+.ro{color:var(--muted)}
+.now .ro{color:var(--rust);font-weight:600}
+.yr{color:var(--muted);font-size:15px;font-weight:500;white-space:nowrap;text-align:right}
 
 /* managers / coaching */
 .bg-sky{background:var(--sky)}
@@ -136,7 +130,6 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 
 @media (max-width:960px){
   .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .earlier{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:720px){
   .wrap{padding-left:20px;padding-right:20px}
@@ -146,8 +139,10 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
   .hero-photo{max-width:280px}
   .section,.contact .split{padding-top:72px;padding-bottom:72px}
   .h2{font-size:36px}
-  .cards,.earlier,.split-right,.wins{grid-template-columns:1fr}
-  .job{padding:28px}
+  .cards,.split-right{grid-template-columns:1fr}
+  .xp-list{padding:4px 20px}
+  .xp-list li{grid-template-columns:1fr auto}
+  .xp-list .ro{grid-column:1 / -1;grid-row:2}
   form{padding:24px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
@@ -235,59 +230,19 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 </section>
 
 <section id="experience" class="bg-soft">
-<div class="section wrap stack">
+<div class="section wrap xp">
 <div class="intro">
 <p class="eyebrow">Experience</p>
 <h2 class="h2">Where I've done the work</h2>
-<p class="lead">From sports media to cybersecurity to blockchain, I've helped teams grow through hiring sprints, acquisitions and reorganizations.</p>
+<p class="lead">From sports media to blockchain, through hiring sprints, acquisitions and reorganizations.</p>
 </div>
-
-<article class="job">
-<div class="job-head">
-<div>
-<h3>o1Labs</h3>
-<p class="role">Head of People &amp; Talent</p>
-</div>
-<p class="when">2018 – Present · San Francisco</p>
-</div>
-<p class="muted">Leading HR hands-on for a 65-person, worldwide blockchain technology company, as the partner to leadership, managers and employees.</p>
-<ul class="wins">
-<li>Partner with leadership on team structure, reorgs and the people side of company decisions.</li>
-<li>Handle sensitive employee relations matters end to end, from investigation to resolution.</li>
-<li>Designed and run semiannual performance and calibration cycles, from goal-setting to feedback.</li>
-<li>Built the leveling framework, career ladders and salary bands, and run the promotion process.</li>
-<li>Coach managers through performance issues, hard conversations, team changes and reorgs.</li>
-<li>Track attrition and engagement data so leadership can make people decisions with confidence.</li>
-</ul>
-</article>
-
-<p class="earlier-title">Earlier: operations, finance and business intelligence, the foundation for a business-first approach to HR</p>
-<div class="earlier">
-<article class="mini">
-<p class="d">2017 – 2018</p>
-<h3>Maha Investments</h3>
-<p class="role">Operations Manager &amp; Finance</p>
-<p>Ran operations, finance processes and compliance controls at an investment firm.</p>
-</article>
-<article class="mini">
-<p class="d">2015 – 2016</p>
-<h3>Oracle</h3>
-<p class="role">Business Intelligence Specialist</p>
-<p>Delivered business intelligence across complex enterprise sales cycles.</p>
-</article>
-<article class="mini">
-<p class="d">2012 – 2015</p>
-<h3>Mokum Solutions</h3>
-<p class="role">Director of Business Operations</p>
-<p>Led People Operations through rapid growth at a cybersecurity and IT consultancy.</p>
-</article>
-<article class="mini">
-<p class="d">2011 – 2012</p>
-<h3>Bleacher Report</h3>
-<p class="role">Senior Operations &amp; Finance</p>
-<p>Supported People Ops, recruiting and finance through the Time Warner acquisition.</p>
-</article>
-</div>
+<ol class="xp-list">
+<li class="now"><span class="co">o1Labs</span><span class="ro">Head of People &amp; Talent</span><span class="yr">2018 – Present</span></li>
+<li><span class="co">Maha Investments</span><span class="ro">Operations Manager &amp; Finance</span><span class="yr">2017 – 2018</span></li>
+<li><span class="co">Oracle</span><span class="ro">Business Intelligence Specialist</span><span class="yr">2015 – 2016</span></li>
+<li><span class="co">Mokum Solutions</span><span class="ro">Director of Business Operations</span><span class="yr">2012 – 2015</span></li>
+<li><span class="co">Bleacher Report</span><span class="ro">Senior Operations &amp; Finance</span><span class="yr">2011 – 2012</span></li>
+</ol>
 </div>
 </section>
 
