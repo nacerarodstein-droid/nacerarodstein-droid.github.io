@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nacera Rodstein — People Partner &amp; HR Leader</title>
-<meta name="description" content="Nacera Rodstein is an HR leader and People Partner in the San Francisco Bay Area with 12+ years in high-growth tech, including 8 years as Head of People & Talent at o1Labs.">
+<meta name="description" content="Nacera Rodstein is an HR leader and People Partner in the San Francisco Bay Area with 12+ years in high-growth tech, most recently 8 years as Head of People & Talent at o1Labs.">
 <meta property="og:title" content="Nacera Rodstein — People Partner &amp; HR Leader">
 <meta property="og:description" content="HR leader and People Partner with 12+ years in high-growth tech: employee relations, performance, org design, total rewards and HR systems.">
 <meta property="og:image" content="https://nacerarodstein.com/nacera-rodstein.jpg">
@@ -80,13 +80,14 @@ header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid 
 .bg-soft{background:var(--soft)}
 .xp{display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-start}
 .xp .intro{flex:1 1 300px}
-.xp-list{flex:999 1 560px;list-style:none;margin:0;padding:0;background:#fff;border-radius:24px;padding:8px 32px}
-.xp-list li{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) 130px;gap:4px 24px;align-items:baseline;padding:20px 0;border-top:1px solid #E6E9F0}
+.xp-list{flex:999 1 560px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:max-content 1fr max-content;column-gap:32px;background:#fff;border-radius:24px;padding:8px 32px}
+.xp-list li{grid-column:1 / -1;display:grid;grid-template-columns:subgrid;gap:4px 24px;align-items:baseline;padding:20px 0;border-top:1px solid #E6E9F0}
 .xp-list li:first-child{border-top:none}
 .co{font-family:var(--head);font-weight:700;font-size:19px}
 .ro{color:var(--muted)}
 .now .ro{color:var(--rust);font-weight:600}
 .yr{color:var(--muted);font-size:15px;font-weight:500;white-space:nowrap;text-align:right}
+.xp .intro{max-width:340px}
 
 /* managers / coaching */
 .bg-sky{background:var(--sky)}
@@ -141,7 +142,8 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
   .h2{font-size:36px}
   .cards,.split-right{grid-template-columns:1fr}
   .xp-list{padding:4px 20px}
-  .xp-list li{grid-template-columns:1fr auto}
+  .xp-list{display:block}
+  .xp-list li{grid-template-columns:1fr auto;column-gap:16px}
   .xp-list .ro{grid-column:1 / -1;grid-row:2}
   form{padding:24px}
 }
@@ -168,7 +170,7 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 <div class="hero-text">
 <p class="eyebrow">People Partner · HR Leader</p>
 <h1>Bonjour, I'm Nacera. I help leaders build teams that do their best work.</h1>
-<p class="lead">I'm an HR leader with 12+ years in high-growth tech, including 8 years as Head of People &amp; Talent at o1Labs. I partner with founders and managers on what makes or breaks a team: employee relations, performance, org design, pay, and the systems behind them.</p>
+<p class="lead">I'm an HR leader with 12+ years in high-growth tech, most recently 8 years as Head of People &amp; Talent at o1Labs. I partner with founders and managers on what makes or breaks a team: employee relations, performance, org design, pay, and the systems behind them.</p>
 <div class="tags" aria-label="Core areas">
 <span>HR business partnering</span><span>Employee relations</span><span>Performance &amp; calibration</span><span>Leveling &amp; comp</span><span>HRIS</span><span>Manager coaching</span>
 </div>
@@ -237,7 +239,7 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 <p class="lead">From sports media to blockchain, through hiring sprints, acquisitions and reorganizations.</p>
 </div>
 <ol class="xp-list">
-<li class="now"><span class="co">o1Labs</span><span class="ro">Head of People &amp; Talent</span><span class="yr">2018 – Present</span></li>
+<li class="now"><span class="co">o1Labs</span><span class="ro">Head of People &amp; Talent</span><span class="yr">Jul 2018 – Nov 2026</span></li>
 <li><span class="co">Maha Investments</span><span class="ro">Operations Manager &amp; Finance</span><span class="yr">2017 – 2018</span></li>
 <li><span class="co">Oracle</span><span class="ro">Business Intelligence Specialist</span><span class="yr">2015 – 2016</span></li>
 <li><span class="co">Mokum Solutions</span><span class="ro">Director of Business Operations</span><span class="yr">2012 – 2015</span></li>
