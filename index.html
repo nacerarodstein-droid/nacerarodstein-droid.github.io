@@ -20,35 +20,51 @@
 body{margin:0}
 a{color:#1C2541}a:hover{color:#B4532A}
 </style>
-<style>html{scroll-behavior:smooth}section[id]{scroll-margin-top:80px}</style>
+<style>
+html{scroll-behavior:smooth}section[id]{scroll-margin-top:80px}
+.btn{transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(28,37,65,.18)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2563EB;outline-offset:2px}
+input:focus,textarea:focus{border-color:#2563EB!important;outline:none}
+#cf-status{margin:0;font-size:15px}
+@media (max-width:720px){
+  .nav{padding:12px 20px!important;flex-wrap:nowrap!important}
+  .nav-link{display:none!important}
+  .hero{padding:48px 20px 64px!important;gap:32px!important}
+  .hero-photo{max-width:280px!important}
+  .coach-grid{grid-template-columns:1fr!important}
+  section > div, section[id]{padding-left:20px!important;padding-right:20px!important}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
 </head>
 <body>
 <div style="font-family: Inter, system-ui, sans-serif; color: #1C2541; background: #FFFFFF; line-height: 1.6; font-size: 17px">
 
 <header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 1px solid #E6E9F0">
-<nav aria-label="Main" style="max-width: 1120px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<nav aria-label="Main" class="nav" style="max-width: 1120px; margin: 0 auto; padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#hello" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 20px; text-decoration: none; color: #1C2541; letter-spacing: -0.01em">Nacera Rodstein</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
-<a href="#what-i-do" style="text-decoration: none">What I Do</a>
-<a href="#coaching" style="text-decoration: none">Coaching</a>
-<a href="#experience" style="text-decoration: none">Experience</a>
-<a href="#education" style="text-decoration: none">Education</a>
-<a href="#reach-out" style="text-decoration: none; background: #B4532A; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Connect</a>
+<a href="#what-i-do" class="nav-link" style="text-decoration: none">What I Do</a>
+<a href="#coaching" class="nav-link" style="text-decoration: none">Coaching</a>
+<a href="#experience" class="nav-link" style="text-decoration: none">Experience</a>
+<a href="#education" class="nav-link" style="text-decoration: none">Education</a>
+<a href="#reach-out" class="btn" style="text-decoration: none; background: #B4532A; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Connect</a>
 </div>
 </nav>
 </header>
 
-<section id="hello" style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<section id="hello" class="hero" style="max-width: 1120px; margin: 0 auto; padding: 96px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
 <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.18em; color: #2563EB">BONJOUR!</p>
 <h1 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 1.08; letter-spacing: -0.02em">I'm Nacera, an HR leader and coach who helps people and teams do their best work.</h1>
 <p style="margin: 0; font-size: 20px; color: #4B5468; max-width: 600px">12+ years leading HR in high-growth tech, and a Co-Active coach in training. Based in the San Francisco Bay Area, I'm the partner employees, managers and founders trust with what matters most.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
-<a href="#reach-out" style="text-decoration: none; background: #1C2541; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Collaborate</a>
-<a href="#coaching" style="text-decoration: none; border: 1.5px solid #1C2541; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">How I coach</a>
+<a href="#reach-out" class="btn" style="text-decoration: none; background: #1C2541; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Let's Collaborate</a>
+<a href="#coaching" class="btn" style="text-decoration: none; border: 1.5px solid #1C2541; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">How I coach</a>
 </div>
 </div>
-<img src="nacera-rodstein.jpg" alt="Portrait of Nacera Rodstein, smiling" style="flex: 1 1 320px; min-width: 0; max-width: 420px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 28px; display: block">
+<img src="nacera-rodstein.jpg" class="hero-photo" width="420" height="525" alt="Portrait of Nacera Rodstein, smiling" style="flex: 1 1 320px; min-width: 0; max-width: 420px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 28px; display: block">
 </section>
 
 <section aria-label="At a glance" style="background: #1C2541; color: #FFFFFF">
@@ -62,12 +78,12 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <p style="margin: 0; color: #D4D9E6">leading People &amp; Talent at o1Labs</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">91%</p>
-<p style="margin: 0; color: #D4D9E6">employee engagement</p>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">65</p>
+<p style="margin: 0; color: #D4D9E6">people on a worldwide team, supported hands-on</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">CPCC</p>
-<p style="margin: 0; color: #D4D9E6">Co-Active coach in training</p>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">5</p>
+<p style="margin: 0; color: #D4D9E6">companies, from sports media to blockchain</p>
 </div>
 </div>
 </section>
@@ -111,8 +127,9 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"></path></svg>
 <p style="margin: 0; font-size: 15px; line-height: 1.45"><strong>Certified Professional Co-Active Coach (CPCC)</strong><br>Co-Active Training Institute · completing March 2027</p>
 </div>
+<a href="#reach-out" class="btn" style="align-self: flex-start; text-decoration: none; background: #2563EB; color: #FFFFFF; padding: 14px 26px; border-radius: 999px; font-weight: 600; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Talk about coaching</a>
 </div>
-<div style="flex: 999 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+<div style="flex: 999 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px" class="coach-grid">
 <div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
 <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10H9l-5 4z"></path><path d="M8 9.5h8"></path><path d="M8 12.5h5"></path></svg>
 <h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Manager coaching</h3>
@@ -157,7 +174,7 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <p style="margin: 0; font-size: 16px">Handle sensitive employee relations matters and coach managers through performance issues, team changes and reorgs.</p>
 <p style="margin: 0; font-size: 16px">Designed and run semiannual performance and calibration cycles, from goal-setting to feedback.</p>
 <p style="margin: 0; font-size: 16px">Built the leveling framework, career ladders and salary bands, and run the promotion process.</p>
-<p style="margin: 0; font-size: 16px">Raised engagement to 91% with people data on attrition and engagement that guides leadership.</p>
+<p style="margin: 0; font-size: 16px">Track attrition and engagement data so leadership can make people decisions with confidence.</p>
 </div>
 </article>
 
@@ -193,7 +210,7 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <section id="education" style="max-width: 1120px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.02em; line-height: 1.15">Education &amp; More</h2>
-<p style="margin: 0; font-size: 19px; color: #4B5468">Training as a certified coach.</p>
+<p style="margin: 0; font-size: 19px; color: #4B5468">A business education from France, coach training underway, and a seat on the board.</p>
 </div>
 <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column">
 <div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
@@ -202,10 +219,10 @@ a{color:#1C2541}a:hover{color:#B4532A}
 </div>
 <div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
 <h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Certified Professional Co-Active Coach (CPCC)</h3>
-<p style="margin: 0; color: #4B5468">Co-Active Training Institute · in progress, expected March 2027</p>
+<p style="margin: 0; color: #4B5468">Co-Active Training Institute · expected March 2027</p>
 </div>
 <div style="padding: 24px 0; border-top: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
-<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Board Member, O(1) Labs</h3>
+<h3 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 20px">Board Member, o1Labs</h3>
 <p style="margin: 0; color: #4B5468">2022, 2024 and 2025</p>
 </div>
 <div style="padding: 24px 0; border-top: 1px solid #D9DEE8; border-bottom: 1px solid #D9DEE8; display: flex; flex-direction: column; gap: 4px">
@@ -226,7 +243,7 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <p style="margin: 0; color: #D4D9E6">San Francisco Bay Area</p>
 </div>
 </div>
-<form id="contact" aria-label="Contact form" style="flex: 999 1 460px; min-width: 0; background: #FFFFFF; color: #1C2541; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 18px">
+<form id="contact" aria-label="Contact form" action="https://formsubmit.co/nacera.rodstein@gmail.com" method="POST" style="flex: 999 1 460px; min-width: 0; background: #FFFFFF; color: #1C2541; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-wrap: wrap; gap: 18px">
 <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
 <label for="cf-name" style="font-size: 14px; font-weight: 600">Name</label>
@@ -241,7 +258,12 @@ a{color:#1C2541}a:hover{color:#B4532A}
 <label for="cf-message" style="font-size: 14px; font-weight: 600">Message</label>
 <textarea id="cf-message" name="message" rows="5" required style="font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid #B8BFCE; border-radius: 12px; resize: vertical"></textarea>
 </div>
-<button type="submit" style="align-self: flex-start; font: inherit; font-weight: 600; background: #B4532A; color: #FFFFFF; border: none; border-radius: 999px; padding: 14px 28px; min-height: 48px; cursor: pointer">Send message</button>
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px">
+<button type="submit" class="btn" style=" font: inherit; font-weight: 600; background: #B4532A; color: #FFFFFF; border: none; border-radius: 999px; padding: 14px 28px; min-height: 48px; cursor: pointer">Send message</button>
+<p style="margin: 0; font-size: 14px; color: #4B5468">I read every message myself.</p>
+</div>
+<p id="cf-status" role="status" aria-live="polite"></p>
 </form>
 </div>
 <div style="border-top: 1px solid #34406A">
@@ -251,11 +273,24 @@ a{color:#1C2541}a:hover{color:#B4532A}
 
 </div>
 <script>
-document.getElementById('contact').addEventListener('submit',function(e){
-  e.preventDefault();
-  var n=document.getElementById('cf-name').value, m=document.getElementById('cf-email').value, t=document.getElementById('cf-message').value;
-  window.location.href='mailto:nacera.rodstein@gmail.com?subject='+encodeURIComponent('Website message from '+n)+'&body='+encodeURIComponent(t+'\n\n'+n+' ('+m+')');
-});
+(function(){
+  var f=document.getElementById('contact'), st=document.getElementById('cf-status'), btn=f.querySelector('button[type=submit]');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var el=f.elements, n=el['name'].value, m=el['email'].value, t=el['message'].value;
+    btn.disabled=true; btn.textContent='Sending…'; st.style.color='#4B5468'; st.textContent='';
+    fetch('https://formsubmit.co/ajax/nacera.rodstein@gmail.com',{
+      method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:n,email:m,message:t,_subject:'Website message from '+n,_replyto:m,_template:'box',_honey:el['_honey'].value})
+    }).then(function(r){return r.json().then(function(d){if(!r.ok||String(d.success)!=='true')throw 0;});})
+    .then(function(){
+      f.reset(); st.style.color='#1F7A4D'; st.textContent='Thank you! Your message is on its way. I\'ll be in touch soon.';
+    }).catch(function(){
+      st.style.color='#B42318';
+      st.innerHTML='Sorry, that didn\'t go through. Please email me directly at <a href="mailto:nacera.rodstein@gmail.com">nacera.rodstein@gmail.com</a>.';
+    }).finally(function(){btn.disabled=false; btn.textContent='Send message';});
+  });
+})();
 </script>
 </body>
 </html>
