@@ -35,7 +35,8 @@ html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
 a{color:var(--ink)}a:hover{color:var(--accent)}
 h1,h2,h3{font-family:var(--head);margin:0}
-.h2,.hero h1,.brand {font-weight:var(--head-w)!important}
+.h2,.brand{font-weight:var(--head-w)!important}
+.hero h1{font-weight:500}
 p{margin:0}
 section[id]{scroll-margin-top:80px}
 .wrap{max-width:1120px;margin:0 auto;padding-left:32px;padding-right:32px}
@@ -61,7 +62,7 @@ header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px s
 /* hero */
 .hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-top:96px;padding-bottom:8px}
 .hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
-.hero h1{font-weight:800;font-size:clamp(40px,5vw,60px);line-height:1.08;letter-spacing:-.02em}
+.hero h1{font-size:clamp(32px,3.6vw,46px);line-height:1.15;letter-spacing:-.01em;text-wrap:balance;max-width:680px}
 .hero .lead{font-size:20px;max-width:620px}
 .open{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:#1F7A4D;background:#E9F6EF;border:1px solid #CBEBD9;border-radius:999px;padding:6px 14px 6px 12px}
 .dot{width:8px;height:8px;border-radius:50%;background:#22A05A;box-shadow:0 0 0 3px rgba(34,160,90,.2)}
