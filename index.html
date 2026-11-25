@@ -17,33 +17,41 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="canonical" href="https://nacerarodstein.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Nacera Rodstein","jobTitle":"People Partner & HR Leader","url":"https://nacerarodstein.com/","image":"https://nacerarodstein.com/nacera-rodstein.jpg","sameAs":["https://linkedin.com/in/nacerarodstein"],"address":{"@type":"PostalAddress","addressRegion":"CA","addressLocality":"San Francisco Bay Area"},"knowsLanguage":["English","French"]}
 </script>
 <style>
-:root{--navy:#1C2541;--rust:#B4532A;--blue:#2563EB;--muted:#4B5468;--soft:#F6F7FB;--sky:#EEF3FE;--line:#D9DEE8;--head:'Plus Jakarta Sans',system-ui,sans-serif}
+:root{
+  --head:'Newsreader',Georgia,serif; --body:'Figtree',system-ui,sans-serif; --head-w:600;
+  --ink:#2B1E23; --muted:#6A5A60; --bg:#FFFFFF; --soft:#FAF5F4; --tint:#F4E9E7; --surface:#FFFFFF;
+  --line:#E6D9D8; --line2:#EFE5E3; --field:#CDBDBC;
+  --accent:#7D2E3D; --on-accent:#FFFFFF; --accent2:#7D2E3D;
+  --dark:#3B1F27; --on-dark:#FFFFFF; --on-dark-muted:#E7D6D9; --dark-line:#5A3640; --dark-faint:#C9AEB4;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--navy);background:#fff;line-height:1.6;font-size:17px}
-a{color:var(--navy)}a:hover{color:var(--rust)}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+a{color:var(--ink)}a:hover{color:var(--accent)}
 h1,h2,h3{font-family:var(--head);margin:0}
+.h2,.hero h1,.brand,.stat b{font-weight:var(--head-w)!important}
 p{margin:0}
 section[id]{scroll-margin-top:80px}
 .wrap{max-width:1120px;margin:0 auto;padding-left:32px;padding-right:32px}
-.eyebrow{font-family:var(--head);font-weight:800;font-size:15px;letter-spacing:.16em;color:var(--blue);text-transform:uppercase}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.16em;color:var(--accent2);text-transform:uppercase}
 .h2{font-weight:800;font-size:44px;letter-spacing:-.02em;line-height:1.15}
 .lead{font-size:19px;color:var(--muted)}
 .muted{color:var(--muted)}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(28,37,65,.18)}
-.btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{color:#fff}
-.btn-rust{background:var(--rust);color:#fff}.btn-rust:hover{color:#fff}
-.btn-line{border:1.5px solid var(--navy)}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(59,31,39,.2)}
+.btn-dark{background:var(--ink);color:var(--bg)}.btn-dark:hover{color:var(--bg)}
+.btn-rust{background:var(--accent);color:var(--on-accent)}.btn-rust:hover{color:var(--on-accent)}
+.btn-line{border:1.5px solid var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
 
 /* header */
-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #E6E9F0}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line2)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px}
 .brand{font-family:var(--head);font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.01em}
 .links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px;font-weight:500}
@@ -58,15 +66,15 @@ header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid 
 .open{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:#1F7A4D;background:#E9F6EF;border:1px solid #CBEBD9;border-radius:999px;padding:6px 14px 6px 12px}
 .dot{width:8px;height:8px;border-radius:50%;background:#22A05A;box-shadow:0 0 0 3px rgba(34,160,90,.2)}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-size:14px;font-weight:500;background:var(--soft);border:1px solid #E6E9F0;border-radius:999px;padding:6px 14px}
+.tags span{font-size:14px;font-weight:500;background:var(--soft);border:1px solid var(--line2);border-radius:999px;padding:6px 14px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;padding-top:4px}
 .hero-photo{flex:1 1 320px;min-width:0;max-width:420px;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:28px;display:block}
 
 /* stats */
-.stats{background:var(--navy);color:#fff}
+.stats{background:var(--dark);color:var(--on-dark)}
 .stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding-top:48px;padding-bottom:48px}
 .stat b{display:block;font-family:var(--head);font-weight:800;font-size:44px;line-height:1.1}
-.stat span{color:#D4D9E6}
+.stat span{color:var(--on-dark-muted)}
 
 /* sections */
 .section{padding-top:104px;padding-bottom:104px}
@@ -76,30 +84,30 @@ header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid 
 .card{background:var(--soft);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:14px}
 .card h3{font-weight:700;font-size:21px}
 .card p{color:var(--muted);font-size:16px}
-.ico{width:32px;height:32px;fill:none;stroke:var(--rust);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ico{width:32px;height:32px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
 /* experience */
 .bg-soft{background:var(--soft)}
 .xp{display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-start}
 .xp .intro{flex:1 1 300px}
-.xp-list{flex:999 1 560px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:max-content 1fr max-content;column-gap:32px;background:#fff;border-radius:24px;padding:8px 32px}
-.xp-list li{grid-column:1 / -1;display:grid;grid-template-columns:subgrid;gap:4px 24px;align-items:baseline;padding:20px 0;border-top:1px solid #E6E9F0}
+.xp-list{flex:999 1 560px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:max-content 1fr max-content;column-gap:32px;background:var(--surface);border-radius:24px;padding:8px 32px}
+.xp-list li{grid-column:1 / -1;display:grid;grid-template-columns:subgrid;gap:4px 24px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line2)}
 .xp-list li:first-child{border-top:none}
 .co{font-family:var(--head);font-weight:700;font-size:19px}
 .ro{color:var(--muted)}
-.now .ro{color:var(--rust);font-weight:600}
+.now .ro{color:var(--accent);font-weight:600}
 .yr{color:var(--muted);font-size:15px;font-weight:500;white-space:nowrap;text-align:right}
 .xp .intro{max-width:340px}
 
 /* managers / coaching */
-.bg-sky{background:var(--sky)}
+.bg-sky{background:var(--tint)}
 .split{display:flex;flex-wrap:wrap;gap:56px}
 .split-left{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px}
 .split-right{flex:999 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.bg-sky .card{background:#fff;padding:28px;gap:12px}
+.bg-sky .card{background:var(--surface);padding:28px;gap:12px}
 .bg-sky .card h3{font-size:20px}
-.bg-sky .ico{stroke:var(--blue);width:30px;height:30px}
-.badge{align-self:flex-start;display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:14px 18px}
+.bg-sky .ico{stroke:var(--accent2);width:30px;height:30px}
+.badge{align-self:flex-start;display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;padding:14px 18px}
 .badge p{font-size:15px;line-height:1.45}
 
 /* education */
@@ -111,25 +119,25 @@ header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid 
 .edu-item h3{font-weight:700;font-size:20px}
 
 /* contact */
-.contact{background:var(--navy);color:#fff}
+.contact{background:var(--dark);color:var(--on-dark)}
 .contact .split{padding-top:104px;padding-bottom:104px}
-.contact .lead{color:#D4D9E6}
+.contact .lead{color:var(--on-dark-muted)}
 .contact-links{display:flex;flex-direction:column;gap:10px;padding-top:8px}
-.contact-links a{color:#fff;font-weight:600}
-form{flex:999 1 460px;min-width:0;background:#fff;color:var(--navy);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:18px}
+.contact-links a{color:var(--on-dark);font-weight:600}
+form{flex:999 1 460px;min-width:0;background:var(--surface);color:var(--ink);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:18px}
 .row{display:flex;flex-wrap:wrap;gap:18px}
 .field{flex:1 1 200px;display:flex;flex-direction:column;gap:6px}
 label{font-size:14px;font-weight:600}
-input,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #B8BFCE;border-radius:12px;min-height:48px}
+input,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid var(--field);border-radius:12px;min-height:48px}
 textarea{resize:vertical}
-input:focus,textarea:focus{border-color:var(--blue);outline:none}
-button{font:inherit;font-weight:600;background:var(--rust);color:#fff;border:none;border-radius:999px;padding:14px 28px;min-height:48px;cursor:pointer}
+input:focus,textarea:focus{border-color:var(--accent2);outline:none}
+button{font:inherit;font-weight:600;background:var(--accent);color:var(--on-accent);border:none;border-radius:999px;padding:14px 28px;min-height:48px;cursor:pointer}
 button:disabled{opacity:.7;cursor:default}
 .send{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
 #cf-status{font-size:15px}
 #cf-status:empty{display:none}
-footer{border-top:1px solid #34406A}
-footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
+footer{border-top:1px solid var(--dark-line)}
+footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:var(--dark-faint)}
 
 @media (max-width:960px){
   .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -258,7 +266,7 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 <h2 class="h2">HR that starts with the manager</h2>
 <p class="lead">Most people problems are solved, or created, by managers. For eight years I've been their first call for hard conversations, performance issues and reorgs. I listen first, ask the questions that matter, and make sure the right call gets made, with care.</p>
 <div class="badge">
-<svg class="ico" style="stroke:var(--blue);width:28px;height:28px;flex:none" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></svg>
+<svg class="ico" style="stroke:var(--accent2);width:28px;height:28px;flex:none" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></svg>
 <p><strong>Certified Professional Co-Active Coach (CPCC)</strong><br>Co-Active Training Institute · completing March 2027</p>
 </div>
 </div>
@@ -321,7 +329,7 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
 <div class="contact-links">
 <a href="mailto:nacera.rodstein@gmail.com">nacera.rodstein@gmail.com</a>
 <a href="https://linkedin.com/in/nacerarodstein">linkedin.com/in/nacerarodstein</a>
-<p style="color:#D4D9E6">San Francisco Bay Area</p>
+<p style="color:var(--on-dark-muted)">San Francisco Bay Area</p>
 </div>
 </div>
 <form id="contact" aria-label="Contact form" action="https://formsubmit.co/nacera.rodstein@gmail.com" method="POST">
@@ -358,7 +366,7 @@ footer p{padding-top:24px;padding-bottom:24px;font-size:14px;color:#B9C0D3}
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var el=f.elements, n=el['name'].value, m=el['email'].value, t=el['message'].value;
-    btn.disabled=true; btn.textContent='Sending…'; st.style.color='#4B5468'; st.textContent='';
+    btn.disabled=true; btn.textContent='Sending…'; st.style.color=''; st.textContent='';
     fetch('https://formsubmit.co/ajax/nacera.rodstein@gmail.com',{
       method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
       body:JSON.stringify({name:n,email:m,message:t,_subject:'Website message from '+n,_replyto:m,_template:'box',_honey:el['_honey'].value})
